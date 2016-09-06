@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Javascript - changing images onclick</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myscript.js"></script>
+</head>
+<body onload="initialize()">
+
+<div class="container">
+    <header><h1>Introducing JavaScript - changing images onclick</h1></header>
+    <main>
+
+        <script>
+            function initialize() {
+                var text = "";
+
+                document.getElementById("greeting").innerHTML = "Photo of a rustic wood post fence with pretty wildflowers";
+            }
+        </script>
+
+
+
+        <h2>Demonstration of changing images</h2>
+        <div class="left">
+            <a href="#large"><img src="images/fence.jpg" alt="Wooden Fence with wild flowers" height="125" title="Wooden Fence with wild flowers" onclick="change01()"></a><br>
+            <a href="#large"><img src="images/fountain.jpg" alt="Water fountain" height="125" title="Water Fountain" onclick="change02()"></a><br>
+            <a href="#large"><img src="images/gazebo.jpg" alt="Gazebo ceiling" height="125" title="Gazebo Ceiling" onclick="change03()"></a><br>
+            <a href="#large"><img src="images/lexi.jpg" alt="Lexi, my furry child" height="125" title="Lexi, my furry child" onclick="change04()"></a><br>
+            <a href="#large"><img src="images/school.jpg" alt="Hallway at school" height="125" title="Hallway at School" onclick="change05()"></a><br>
+            <a href="#large"><img src="images/sky.jpg" alt="Beautiful cloud formation" height="125" title="Beautiful clouds in the sky" onclick="change06()"></a><br>
+            <a href="#large"><img src="images/tombydam.jpg" alt="Tom by dam" height="125" title="Tom by McHenry Dam" onclick="change07()"></a><br>
+            <a href="#large"><img src="images/tomsleeping.jpg" alt="Tom being silly" height="125" title="Tom being silly" onclick="change08()"></a><br>
+            <a href="#large"><img src="images/treeline.jpg" alt="Treeline at school" height="125" title="Treeline at school" onclick="change09()"></a><br>
+            <a href="#large"><img src="images/yellowflowers.jpg" alt="Yellow and white daisies" height="125" title="Yellow and white Daisies" onclick="change10()"></a><br>
+        </div>
+        <div class="right">
+            <img id="large" src="images/fence.jpg" alt="wooden fence with wild flowers">
+            <p id="greeting"></p>
+        </div>
+    </main>
+</div>
+
+</body>
+
+
+</html>
